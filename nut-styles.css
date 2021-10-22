@@ -1,0 +1,81 @@
+
+/* buat benerin background nya */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+} 
+*/
+
+
+html {
+    font-size: 8px;
+    background: url('./img/game-off-2021.gif') center;
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  .keys {
+    display: flex;
+    min-height: 69vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+.keys2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+  
