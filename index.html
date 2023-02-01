@@ -1,94 +1,105 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
-<!-- meta names -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Sound Button</title>
+    <meta name="title" content="Sound Button">
     <meta name="description" content="sound button mengabut">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nut.mikailthoriq.cf">
+    <meta property="og:title" content="Sound Button">
+    <meta property="og:description" content="sound button mengabut">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/fir-cache-riqq-cdn.appspot.com/o/pics%2Fnutprev1.png?alt=media&token=7870a2f8-1bc2-434b-9cb0-7a93833e1259">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nut.mikailthoriq.cf">
+    <meta property="twitter:title" content="Sound Button">
+    <meta property="twitter:description" content="sound button mengabut">
+    <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/fir-cache-riqq-cdn.appspot.com/o/pics%2Fnutprev1.png?alt=media&token=7870a2f8-1bc2-434b-9cb0-7a93833e1259">
     <meta author="thoriq" content="sore sore ngegabut">
+    <link rel="shortcut icon" type="image/jpg" href="./img/faviconnutv1.jpg"/>
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./nut-styles.css">
-    <title>Sound Button</title>
 </head>
 <body>
     <!-- the glory button -->
     <div class="keys">
         <div data-key="65" class="key">
           <kbd>A</kbd>
-          <span class="sound">Nut</span>
+          <button onclick="startbutton('sound1')" class="sound">Nut</button>
         </div>
         <div data-key="83" class="key">
           <kbd>S</kbd>
-          <span class="sound">boom</span>
+          <button onclick="startbutton('sound2')" class="sound">boom</button>
         </div>
         <div data-key="68" class="key">
           <kbd>D</kbd>
-          <span class="sound">moan</span>
+          <button onclick="startbutton('sound3')" class="sound">moan</button>
         </div>
         <div data-key="70" class="key">
           <kbd>F</kbd>
-          <span class="sound">baka(delay)</span>
+          <button onclick="startbutton('sound4')" class="sound">baka(delay)</button>
         </div>
         <div data-key="71" class="key">
           <kbd>G</kbd>
-          <span class="sound">ara ara</span>
+          <button onclick="startbutton('sound5')" class="sound">ara ara</button>
         </div>
         <div data-key="72" class="key">
           <kbd>H</kbd>
-          <span class="sound">nico2 ni</span>
+          <button onclick="startbutton('sound6')" class="sound">nico2 ni</button>
         </div>
         <div data-key="74" class="key">
           <kbd>J</kbd>
-          <span class="sound">Yah...</span>
+          <button onclick="startbutton('sound7')" class="sound">Yah...</button>
         </div>
       </div>
       <div class="keys2">
         <div data-key="75" class="key">
           <kbd>K</kbd>
-          <span class="sound">poi</span>
+          <button onclick="startbutton('sound8')" class="sound">poi</button>
         </div>
         <div data-key="76" class="key">
           <kbd>L</kbd>
-          <span class="sound">puffer-fish</span>
+          <button onclick="startbutton('sound9')" class="sound">puffer-fish</button>
         </div>
         <div data-key="90" class="key">
           <kbd>Z</kbd>
-          <span class="sound">bruh</span>
+          <button onclick="startbutton('sound10')" class="sound">bruh</button>
         </div>
         <div data-key="88" class="key">
           <kbd>X</kbd>
-          <span class="sound">qt with oni</span>
+          <button onclick="startbutton('sound11')" class="sound">qt with oni</button>
         </div>
         <div data-key="67" class="key">
           <kbd>C</kbd>
-          <span class="sound">elevator</span>
+          <button onclick="startbutton('sound12')" class="sound">elevator</button>
         </div>
         <div data-key="86" class="key">
           <kbd>V</kbd>
-          <span class="sound">sexymusic</span>
+          <button onclick="startbutton('sound13')" class="sound">sexymusic</button>
         </div>
         <div data-key="66" class="key">
           <kbd>B</kbd>
-          <span class="sound">yeet</span>
+          <button onclick="startbutton('sound14')" class="sound">yeet</button>
         </div>
         <div data-key="78" class="key">
           <kbd>N</kbd>
-          <span class="sound">SUCC</span>
+          <button onclick="startbutton('sound15')" class="sound">SUCC</button>
         </div>
         <div data-key="77" class="key">
           <kbd>M</kbd>
-          <span class="sound">Empty</span>
+          <button onclick="startbutton('sound16')" class="sound">empty</button>
           </div>
       </div>
     
 
-    <!--  
- 	sauce audio files
-        
-       default (us) keyboard layout   
-    -->
+    <!-- sauce audio files (keyboard oriented) -->
         <audio data-key="65" src="sounds/nut.mp3"></audio>
         <audio data-key="83" src="sounds/vine-boom.mp3"></audio>
         <audio data-key="68" src="sounds/cute-moan-2-mp3.mp3"></audio>
@@ -104,9 +115,27 @@
         <audio data-key="86" src="sounds/sexymusic.mp3"></audio>
         <audio data-key="66" src="sounds/yeet.mp3"></audio>
         <audio data-key="78" src="sounds/succ.mp3"></audio>
-        <audio data-key="77" src="sounds/"></audio>
+        <audio data-key="77" src="/"></audio>
 
-<!-- running scripts -->	
+    <!-- sauce audio file (button oriented) -->
+    <audio id="sound1" src="sounds/nut.mp3"></audio>
+    <audio id="sound2" src="sounds/vine-boom.mp3"></audio>
+    <audio id="sound3" src="sounds/cute-moan-2-mp3.mp3"></audio>
+    <audio id="sound4" src="sounds/baka.mp3"></audio>
+    <audio id="sound5" src="sounds/lisa_ara_ara_normalized_lGdXcjK.mp3"></audio>
+    <audio id="sound6" src="sounds/niconiconilovesyou-3_cutted.mp3"></audio>
+    <audio id="sound7" src="sounds/yah.mp3"></audio>
+    <audio id="sound8" src="sounds/poi.mp3"></audio>
+    <audio id="sound9" src="sounds/aaughmp3.mp3"></audio>
+    <audio id="sound10" src="sounds/bruh.mp3"></audio>
+    <audio id="sound11" src="sounds/qualitytimewithonichan.mp3"></audio>
+    <audio id="sound12" src="sounds/musique-dascenseur-mp3cut.mp3"></audio>
+    <audio id="sound13" src="sounds/sexymusic.mp3"></audio>
+    <audio id="sound14" src="sounds/yeet.mp3"></audio>
+    <audio id="sound15" src="sounds/succ.mp3"></audio>
+    <audio id="sound16" src="/"></audio>
+
+
 <script src="./moan.js"></script>
 </body>
 </html>
